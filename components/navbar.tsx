@@ -59,37 +59,70 @@ export default function Navbar() {
             } flex-col md:flex md:flex-row md:items-center gap-6 mt-4 md:mt-0 text-lg font-bold`}
           >
             <li>
-              <Link href="/Home" className="hover:text-yellow-500">
+              <Link
+                href="/Home"
+                className="hover:text-yellow-500"
+                onClick={() => setMenuOpen(false)}
+              >
                 Home
               </Link>
             </li>
+
             <li>
-              <Link href="/About" className="hover:text-yellow-500">
+              <Link
+                href="/About"
+                className="hover:text-yellow-500"
+                onClick={() => setMenuOpen(false)}
+              >
                 About
               </Link>
             </li>
+
             <li>
-              <Link href="/Product" className="hover:text-yellow-500">
+              <Link
+                href="/Product"
+                className="hover:text-yellow-500"
+                onClick={() => setMenuOpen(false)}
+              >
                 Product
               </Link>
             </li>
+
             <li>
-              <Link href="/Blog" className="hover:text-yellow-500">
+              <Link
+                href="/Blog"
+                className="hover:text-yellow-500"
+                onClick={() => setMenuOpen(false)}
+              >
                 Blog
               </Link>
             </li>
+
             <li>
-              <Link href="/Contact" className="hover:text-yellow-500">
+              <Link
+                href="/Contact"
+                className="hover:text-yellow-500"
+                onClick={() => setMenuOpen(false)}
+              >
                 Contact
               </Link>
             </li>
+
             <li>
-              <Link href="/" className="hover:text-yellow-500">
-                Signup
+              <Link
+                href="/client"
+                className="hover:text-yellow-500"
+                onClick={() => setMenuOpen(false)}
+              >
+                client
               </Link>
             </li>
+
             <li>
-              <button className="bg-yellow-400 hover:bg-yellow-500 text-white px-6 py-2">
+              <button
+                className="bg-yellow-400 hover:bg-yellow-500 text-white px-6 py-2"
+                onClick={() => setMenuOpen(false)}
+              >
                 Login
               </button>
             </li>
